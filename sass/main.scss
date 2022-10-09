@@ -12,6 +12,7 @@ body {
 
 // components
 @import "components/header";
+@import 'components/logo';
 @import "components/hero";
 @import "components/benefits";
 @import "components/operation";
@@ -20,3 +21,4 @@ body {
 @import "components/projects";
 @import "components/footer";
 @import "components/backdrop";
+@import 'components/modal';
