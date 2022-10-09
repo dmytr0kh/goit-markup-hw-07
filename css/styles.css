@@ -603,7 +603,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  /* gap: 30px; */
 }
 
 .project-link {
@@ -636,8 +635,6 @@ button {
 }
 
 .project-link:hover .project-overlay {
-  /* top: 0;
-  left: 0; */
   transform: translate(0);
 }
 
