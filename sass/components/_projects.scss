@@ -7,10 +7,10 @@
 
 .buttons-list {
   margin-right: 8px;
-}
 
-.buttons-list:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .project-btn {
@@ -31,15 +31,15 @@
   padding-right: 22px;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.project-btn:hover,
-.project-btn:focus {
-  color: $main-page-color;
-  background-color: $accent-color;
-  border: none;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  &:hover,
+  &:focus {
+    color: $main-page-color;
+    background-color: $accent-color;
+    border: none;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .projects-list {
@@ -53,12 +53,16 @@
   text-decoration: none;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.project-link:hover,
-.project-link:focus {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover .project-overlay {
+    transform: translate(0);
+  }
 }
 
 .project-img {
@@ -77,10 +81,6 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover .project-overlay {
-  transform: translate(0);
-}
-
 .overlay-text {
   font-size: 18px;
   line-height: 1.55;
@@ -93,14 +93,14 @@
   max-width: 370px;
   margin-bottom: 30px;
   margin-right: 30px;
-}
 
-.project-box:nth-child(3n) {
-  margin-right: 0;
-}
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
-.project-box:nth-child(n + 7) {
-  margin-bottom: 0;
+  &:nth-child(n + 7) {
+    margin-bottom: 0;
+  }
 }
 
 .project-dsc {

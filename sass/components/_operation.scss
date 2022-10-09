@@ -22,10 +22,10 @@
 
 .operation-item {
   margin-right: 30px;
-}
 
-.operation-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .operation-box {
