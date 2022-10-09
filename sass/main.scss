@@ -3,10 +3,10 @@
 @import "utils/reset";
 
 body {
-  font-family: "Roboto", sans-serif;
   background-color: $main-page-color;
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  letter-spacing: $main-letter-spacing;
   color: $main-text-color;
 }
 
